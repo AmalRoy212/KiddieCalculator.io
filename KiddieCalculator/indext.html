@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OldCalculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="main" class="main_container">
+        <div class="wall">
+            <div class="lock" id="intro">
+                <h1 style="margin-left: 30px ;" id="lab">hey, Kiddies .Let's</h1>
+                <h1 style="margin-left: 30px ; font-size: xx-large;" id="lab1">Explore Some</h1>
+                <h1 style="margin-left: 30px ;" id="lab2">MATH</h1>
+                <h5>Mathematics is used in science for modeling phenomena, which then allows predictions to be made from experimental laws. The independence of mathematical truth from any experimentation implies that the accuracy of such predictions depends only on the adequacy of the model. <br>For example, the perihelion precession of Mercury could only be explained after the emergence of Einstein's general relativity, which replaced Newton's law of gravitation as a better mathematical model.</h5>
+                <div class="sbu_div" id="plane">
+                    <span><ion-icon name="airplane-outline"></ion-icon></span>
+                </div>
+
+            </div>
+
+            <div class="calculator" id="calculatorBody">
+                <div class="display">
+                    <input type="text" class="screen" id="display">
+
+                </div>
+                <div class="keybord">
+                    <div class="row">
+                        <button class="inp_buttons" onclick="buttonClick(7)">7</button>
+                        <button class="inp_buttons" onclick="buttonClick(8)">8</button>
+                        <button class="inp_buttons" onclick="buttonClick(9)">9</button>
+                        <button class="inp_buttons" onclick="clearButton()">AC</button>
+                    </div>
+                    <div class="row">
+                        <button class="inp_buttons" onclick="buttonClick(4)">4</button>
+                        <button class="inp_buttons" onclick="buttonClick(5)">5</button>
+                        <button class="inp_buttons" onclick="buttonClick(6)">6</button>
+                        <button class="inp_buttons" onclick="operatorClicked('/')">/</button>
+                    </div>
+                    <div class="row">
+                        <button class="inp_buttons" onclick="buttonClick(1)">1</button>
+                        <button class="inp_buttons" onclick="buttonClick(2)">2</button>
+                        <button class="inp_buttons" onclick="buttonClick(3)">3</button>
+                        <button class="inp_buttons" onclick="operatorClicked('*')">X</button>
+                    </div>
+                    <div class="row">
+                        <button class="inp_buttons" onclick="operatorClicked('-')">-</button>
+                        <button class="inp_buttons1" onclick="buttonClick(0)">0</button>
+                        <button class="inp_buttons" onclick="operatorClicked('+')">+</button>
+                    </div>
+                    <div class="row">
+                        <button class="inp_buttons2" onclick="buttonClick('.')">.</button>
+                        <button class="inp_buttons2" onclick="equalButton('=')">=</button>
+                    </div>
+                </div>
+            </div>
+            <div class="monitor" id="calculatorMontior" >
+                <div style="height: 100%;width:50%">
+                    <div class="int"><h1 id="fValue" class="m_shower">0</h1></div>
+                    <div class="int"><h1 id="sValue" class="m_shower">0</h1></div>
+                    <div class="int1"><h1 id="rValue" class="m_shower1">0</h1></div>
+                    <div class="operator"><h1 id="oValue" class="m_shower2">+</h1></div>
+                </div>
+                <div class="monitor-lock" id="lockMonitor">
+                    <h1 class="dat" id="date"></h1>
+                    <h1 class="tim" id="time"></h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+</body>
+</html>
